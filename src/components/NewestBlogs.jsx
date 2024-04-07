@@ -7,7 +7,7 @@ const NewestBlogs = ({homeList}) => {
             <div className='grid grid-cols-3 gap-4'>
                 {
                     homeList.map((item)=>{
-                        return (<Link key={item['id']} className="card w-100 bg-base-100 shadow-xl">
+                        return (<Link to={'/details/'+item['id']} key={item['id']} className="card w-100 bg-base-100 shadow-xl">
                             <figure><img src={item['img']}
                                          alt="image"/></figure>
                             <div className="card-body">

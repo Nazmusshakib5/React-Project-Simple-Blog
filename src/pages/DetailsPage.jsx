@@ -1,9 +1,10 @@
 import Layout from "../layout/Layout.jsx";
+import BlogDetails from "../components/BlogDetails.jsx";
 
 const DetailsPage = () => {
     return (
         <Layout>
-            <h1>DetailsPage</h1>
+            <BlogDetails/>
         </Layout>
     );
 };

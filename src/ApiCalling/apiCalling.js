@@ -31,3 +31,12 @@ export async function blogListApi (id){
         return []
     }
 }
+
+export async function detailsApi(id){
+    let res=await axios.get(baseUrl+'/post-details/'+id);
+    if(res.status===200){
+        return res.data;
+    }else{
+        return  [];
+    }
+}
